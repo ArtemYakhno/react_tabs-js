@@ -32,7 +32,7 @@ export const Tabs = ({ tabs, activeTabId, onTabSelected }) => {
         </ul>
       </div>
       <div className="block" data-cy="TabContent">
-        {selectedTab.content}
+        {selectedTab.content || 'No content'}
       </div>
     </div>
   );
